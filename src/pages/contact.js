@@ -1,8 +1,11 @@
 import React from "react"
+import Footer from "../components/footer"
+
+import Layout from "../components/layout"
 
 const Contact = () => {
   return (
-    <div>
+    <Layout>
       <h1>Contact</h1>
       <p>
         Feel free to contact me at{" "}
@@ -11,7 +14,7 @@ const Contact = () => {
         </a>
         .
       </p>
-    </div>
+    </Layout>
   )
 }
 
