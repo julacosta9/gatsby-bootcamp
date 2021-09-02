@@ -2,7 +2,7 @@
   Gatsby Blog using Contentful
 </h1>
 
-This page is built with Gatsby and Contentful. The posts in the blog are created in the Contentful CMS and the site is deployed on Netlify. View the deployed page [here](https://priceless-euler-928dd0.netlify.app/).
+This site is built with Gatsby and Contentful. The posts in the blog are created in the Contentful CMS and the site is deployed on Netlify. View the deployed page [here](https://priceless-euler-928dd0.netlify.app/).
 
 ## 📸 Screenshots
 
