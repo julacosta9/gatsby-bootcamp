@@ -4,6 +4,7 @@ import { renderRichText } from "gatsby-source-contentful/rich-text"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
+import * as blogStyles from "./blog.module.scss"
 
 export const query = graphql`
   query ($slug: String!) {
@@ -45,14 +46,18 @@ const Blog = ({ data }) => {
   return (
     <Layout>
       <Head title={data.contentfulBlogPost.title} />
-      <article>
-        <h1>{data.contentfulBlogPost.title}</h1>
-        <p>{data.contentfulBlogPost.publishedDate}</p>
-        <section>
-          {data.contentfulBlogPost &&
-            renderRichText(data.contentfulBlogPost.body, options)}
-        </section>
-      </article>
+      <div className={blogStyles.container}>
+        <article>
+          <div className={blogStyles.header}>
+            <h1>{data.contentfulBlogPost.title}</h1>
+            <p>{data.contentfulBlogPost.publishedDate}</p>
+          </div>
+          <section className={blogStyles.body}>
+            {data.contentfulBlogPost &&
+              renderRichText(data.contentfulBlogPost.body, options)}
+          </section>
+        </article>
+      </div>
     </Layout>
   )
 }
