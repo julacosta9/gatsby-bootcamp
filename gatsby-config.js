@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Bootcamp!",
     author: "Julian Acosta",
+    siteUrl: 'https://priceless-euler-928dd0.netlify.app/',
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -20,5 +21,6 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    "gatsby-plugin-sitemap",
   ],
 }
