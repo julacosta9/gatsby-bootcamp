@@ -2,9 +2,10 @@ module.exports = {
   siteMetadata: {
     title: "Gatsby Bootcamp!",
     author: "Julian Acosta",
-    siteUrl: 'https://priceless-euler-928dd0.netlify.app/',
+    siteUrl: 'https://priceless-euler-928dd0.netlify.app',
   },
   plugins: [
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
@@ -20,7 +21,6 @@ module.exports = {
         name: "src",
         path: `${__dirname}/src/`,
       },
-    },
-    "gatsby-plugin-sitemap",
+    }
   ],
 }
