@@ -1,5 +1,5 @@
 <h1 align="center">
-  Gatsby Blog using Contentful
+  Gatsby + Contentful Blog
 </h1>
 
 This site is built with Gatsby and Contentful. The posts in the blog are created in the Contentful CMS and the site is deployed on Netlify. View the deployed page [here](https://priceless-euler-928dd0.netlify.app/).
